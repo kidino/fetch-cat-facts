@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Cat-Facts</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
 </head>
 
 <body>
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-12">
-                <h1>Cat Facts</h1>
-                <div class="card">
+                <div class="d-flex justify-content-between">
+                    <h1>Cat Facts</h1><button class="btn btn-primary btn-lg ms-auto" type="button" onclick="fetchCatFact()"><i class="fas fa-sync-alt"></i><span class="ms-1">Refresh</span></button>
+                </div>
+                <div class="card mt-3">
                     <div class="card-body">
                         <p class="fs-4" id="cat-fact-text">Fetching new cat fact... please wait.</p>
                     </div>
-                </div><button class="btn btn-primary btn-lg mt-2 w-100" type="button" onclick="fetchCatFact()">Get New Fact</button>
+                </div>
             </div>
         </div>
     </div>
