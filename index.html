@@ -14,7 +14,16 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="d-flex justify-content-between">
-                    <h1>Cat Facts</h1><button class="btn btn-primary btn-lg ms-auto" type="button" onclick="fetchCatFact()"><i class="fas fa-sync-alt"></i><span class="ms-1">Refresh</span></button>
+                    <h1>Cat Facts</h1>
+                    <button class="btn btn-primary btn-lg ms-auto refresh-btn" type="button" onclick="fetchCatFact()">
+                        <span class="indicator-label">
+                            <i class="fas fa-sync-alt"></i><span class="ms-1">Refresh</span>
+                        </span>
+                        <span class="indicator-progress d-none">
+                            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                            Fetching...
+                        </span>
+                    </button>
                 </div>
                 <div class="card mt-3">
                     <div class="card-body">
